@@ -1,4 +1,4 @@
-# Hi there, I'm Edii Lou Patty! 👋
+# Hi there, I'm Edii Loupatty 👋
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Full+Stack+Developer;Game+Developer;Hardware+Enthusiast;Always+Learning+New+Things&font=Fira%20Code&center=true&width=440&height=50&duration=4000&pause=1000" alt="Typing SVG">
