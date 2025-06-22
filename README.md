@@ -1,7 +1,7 @@
 # Hi there, I'm Edii Lou Patty! 👋
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Full+Stack+Developer;Game+Developer;Hardware+Enthusiast;Always+Learning+New+Things&font=Fira%20Code&center=true&width=440&height=50&duration=4000&pause=1000" alt="Typing SVG">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Full+Stack+Developer;Hardware+Enthusiast;Always+Learning+New+Things&font=Fira%20Code&center=true&width=440&height=50&duration=4000&pause=1000" alt="Typing SVG">
 </div>
 
 
@@ -19,6 +19,7 @@
 ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 
 ### Frameworks & Libraries
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
 ![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
