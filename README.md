@@ -1,89 +1,499 @@
-# Hi there, I'm Edii Lou Patty! 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edii Lou Patty - Neural Network Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Full+Stack+Developer;Hardware+Enthusiast;Always+Learning+New+Things&font=Fira%20Code&center=true&width=440&height=50&duration=4000&pause=1000" alt="Typing SVG">
-</div>
+        body {
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
 
+        .container {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
 
+        .neural-network {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
 
-## 🛠️ Tech Stack
+        .profile-card {
+            background: rgba(13, 17, 23, 0.9);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+            animation: slideUp 1s ease-out;
+        }
 
-<div align="center">
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-### Languages
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![GDScript](https://img.shields.io/badge/-GDScript-478CBF?style=flat-square&logo=godot-engine&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
 
-### Frameworks & Libraries
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+        .name {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #f78166, #58a6ff, #7c3aed);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradient 3s ease-in-out infinite;
+            margin-bottom: 10px;
+        }
 
-### Database
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
 
-### Hardware & IoT
-![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat-square&logo=arduino&logoColor=white)
-![NodeMCU](https://img.shields.io/badge/-NodeMCU-E7352C?style=flat-square&logo=nodemcu&logoColor=white)
-![ESP32](https://img.shields.io/badge/-ESP32-000000?style=flat-square&logo=espressif&logoColor=white)
+        .title {
+            font-size: 1.2rem;
+            color: #7c3aed;
+            margin-bottom: 20px;
+        }
 
-### Game Development
-![Godot](https://img.shields.io/badge/-Godot-478CBF?style=flat-square&logo=godot-engine&logoColor=white)
+        .typing-container {
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-### Tools
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Cursor](https://img.shields.io/badge/-Cursor-000000?style=flat-square&logo=cursor&logoColor=white)
-![AI](https://img.shields.io/badge/-AI%20Tools-FF6B6B?style=flat-square&logo=openai&logoColor=white)
+        .typing-text {
+            color: #58a6ff;
+            font-size: 1.1rem;
+        }
 
-</div>
+        .cursor {
+            display: inline-block;
+            width: 2px;
+            height: 20px;
+            background: #58a6ff;
+            margin-left: 2px;
+            animation: blink 1s infinite;
+        }
 
-## 📊 GitHub Stats
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ediiloupatty&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117" alt="GitHub Stats" width="48%">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ediiloupatty&theme=radical&hide_border=true&background=0D1117" alt="GitHub Streak" width="48%">
-</div>
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ediiloupatty&layout=compact&theme=radical&hide_border=true&bg_color=0D1117" alt="Top Languages" width="48%">
-</div>
+        .info-section {
+            background: rgba(48, 54, 61, 0.3);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
 
+        .info-section:hover {
+            border-color: #58a6ff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(88, 166, 255, 0.1);
+        }
 
+        .section-title {
+            color: #f78166;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
 
-## 📈 Activity Graph
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 20px;
+            background: linear-gradient(45deg, #f78166, #58a6ff);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ediiloupatty&bg_color=0D1117&color=5BCDEC&line=5BCDEC&point=FFFFFF&hide_border=true" alt="Activity Graph">
-</div>
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
 
+        .tech-item {
+            background: rgba(88, 166, 255, 0.1);
+            color: #58a6ff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            transition: all 0.3s ease;
+        }
 
+        .tech-item:hover {
+            background: rgba(88, 166, 255, 0.2);
+            transform: scale(1.05);
+        }
 
-## 💭 Fun Quote
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-> *"github cuma 1 ya gez ya"* - Sometimes simple is better! 😄
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: rgba(48, 54, 61, 0.3);
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            min-width: 120px;
+            transition: all 0.3s ease;
+        }
 
-## 📫 Connect with Me
+        .stat-item:hover {
+            border-color: #7c3aed;
+            transform: scale(1.05);
+        }
 
-<div align="center">
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 5px;
+        }
 
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ediiloupatty)
-[![Email](https://img.shields.io/badge/-Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ediloupatty@gmail.com)
+        .stat-label {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
 
-</div>
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+        }
 
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
 
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(48, 54, 61, 0.5);
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            color: #c9d1d9;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-<div align="center">
-  
-  **Thanks for visiting! Let's build something awesome together! 🚀**
-  
-  *I may be slow to respond, but every great project takes time to perfect!* ⏰
-  
-</div>
+        .contact-link:hover {
+            border-color: #58a6ff;
+            background: rgba(88, 166, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #7c3aed;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(124, 58, 237, 0.1);
+            border-left: 4px solid #7c3aed;
+            border-radius: 4px;
+        }
+
+        .node {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #58a6ff;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+
+        .connection {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #58a6ff, transparent);
+            animation: flow 3s linear infinite;
+        }
+
+        @keyframes flow {
+            0% { opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .name { font-size: 2rem; }
+            .profile-card { padding: 20px; margin: 10px; }
+            .info-grid { grid-template-columns: 1fr; gap: 20px; }
+            .contact-links { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="neural-network" id="neuralNetwork"></div>
+    
+    <div class="container">
+        <div class="profile-card">
+            <div class="header">
+                <h1 class="name">Edii Lou Patty</h1>
+                <div class="title">👋 Neural Network Developer</div>
+                <div class="typing-container">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-section">
+                    <div class="section-title">Languages</div>
+                    <div class="tech-list">
+                        <span class="tech-item">JavaScript</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">PHP</span>
+                        <span class="tech-item">GDScript</span>
+                        <span class="tech-item">HTML5</span>
+                        <span class="tech-item">C++</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="section-title">Frameworks</div>
+                    <div class="tech-list">
+                        <span class="tech-item">React</span>
+                        <span class="tech-item">Express.js</span>
+                        <span class="tech-item">Prisma</span>
+                        <span class="tech-item">OpenCV</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="section-title">Database</div>
+                    <div class="tech-list">
+                        <span class="tech-item">MySQL</span>
+                        <span class="tech-item">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <div class="section-title">Hardware & IoT</div>
+                    <div class="tech-list">
+                        <span class="tech-item">Arduino</span>
+                        <span class="tech-item">NodeMCU</span>
+                        <span class="tech-item">ESP32</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="projects">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="commits">0</div>
+                    <div class="stat-label">Commits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="experience">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+
+            <div class="quote">
+                "github cuma 1 ya gez ya" - Sometimes simple is better! 😄
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-links">
+                    <a href="https://github.com/ediiloupatty" class="contact-link">
+                        <span>🐙</span> GitHub
+                    </a>
+                    <a href="mailto:ediloupatty@gmail.com" class="contact-link">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+                <p><strong>Thanks for visiting! Let's build something awesome together! 🚀</strong></p>
+                <p><em>I may be slow to respond, but every great project takes time to perfect! ⏰</em></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Typing animation
+        const texts = [
+            'Full Stack Developer',
+            'Game Developer', 
+            'Hardware Enthusiast',
+            'IoT Developer',
+            'Always Learning New Things'
+        ];
+        
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typingText');
+
+        function typeText() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+
+            const speed = isDeleting ? 50 : 100;
+            setTimeout(typeText, speed);
+        }
+
+        // Neural network animation
+        function createNeuralNetwork() {
+            const canvas = document.getElementById('neuralNetwork');
+            const nodes = [];
+            const connections = [];
+            
+            // Create nodes
+            for (let i = 0; i < 50; i++) {
+                const node = document.createElement('div');
+                node.className = 'node';
+                node.style.left = Math.random() * window.innerWidth + 'px';
+                node.style.top = Math.random() * window.innerHeight + 'px';
+                node.style.animationDelay = Math.random() * 2 + 's';
+                canvas.appendChild(node);
+                nodes.push({
+                    element: node,
+                    x: parseFloat(node.style.left),
+                    y: parseFloat(node.style.top)
+                });
+            }
+
+            // Create connections
+            for (let i = 0; i < nodes.length; i++) {
+                for (let j = i + 1; j < nodes.length; j++) {
+                    const distance = Math.sqrt(
+                        Math.pow(nodes[i].x - nodes[j].x, 2) + 
+                        Math.pow(nodes[i].y - nodes[j].y, 2)
+                    );
+                    
+                    if (distance < 150) {
+                        const connection = document.createElement('div');
+                        connection.className = 'connection';
+                        
+                        const angle = Math.atan2(nodes[j].y - nodes[i].y, nodes[j].x - nodes[i].x);
+                        connection.style.width = distance + 'px';
+                        connection.style.left = nodes[i].x + 'px';
+                        connection.style.top = nodes[i].y + 'px';
+                        connection.style.transform = `rotate(${angle}rad)`;
+                        connection.style.animationDelay = Math.random() * 3 + 's';
+                        
+                        canvas.appendChild(connection);
+                    }
+                }
+            }
+        }
+
+        // Animate numbers
+        function animateNumber(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateNumber() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateNumber);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            updateNumber();
+        }
+
+        // Initialize
+        window.addEventListener('load', () => {
+            typeText();
+            createNeuralNetwork();
+            
+            setTimeout(() => {
+                animateNumber(document.getElementById('projects'), 15);
+                animateNumber(document.getElementById('commits'), 1250);
+                animateNumber(document.getElementById('experience'), 3);
+            }, 1000);
+        });
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            document.getElementById('neuralNetwork').innerHTML = '';
+            createNeuralNetwork();
+        });
+    </script>
+</body>
+</html>
